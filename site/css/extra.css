@@ -1,0 +1,61 @@
+body{
+    font-size: 15px;
+}
+
+
+.md-typeset h1 {
+    color : red;
+    font-size: 19px;
+}
+
+
+.md-typeset h2 {
+    font-size: 17px;
+    color : green;
+}
+
+.md-typeset h3 {
+    font-size: 15px;
+    color : blue;
+}
+
+.md-typeset p{
+    font-size: 13px;
+}
+
+.md-typeset li{
+    font-size: 13px;
+}
+
+/* 
+.md-footer__inner{overflow:hidden;padding:0rem;visibility: hidden;}
+.md-footer__link{outline-color:var(--md-accent-fg-color);padding-bottom:0rem;padding-top:.3rem;transition:opacity .25s}@media screen and (min-width:45em){.md-footer__link{width:50%}}
+.md-footer__link:focus,.md-footer__link:hover{opacity:.7}
+.md-footer__link--prev{float:left}@media screen and (max-width:44.9375em){.md-footer__link--prev{width:25%}.md-footer__link--prev .md-footer__title{display:none}}[dir=rtl] 
+.md-footer__link--prev{float:right}[dir=rtl] 
+.md-footer__link--prev svg{transform:scaleX(-1)}
+.md-footer__link--next{float:right;text-align:right}@media screen and (max-width:44.9375em){.md-footer__link--next{width:75%}}[dir=rtl] 
+.md-footer__link--next{float:left;text-align:left}[dir=rtl] .md-footer__link--next svg{transform:scaleX(-1)}
+.md-footer__title{flex-grow:1;font-size:.5rem;line-height:2.4rem;max-width:calc(100% - 2.4rem);padding:0 1rem;position:relative}
+.md-footer__button{margin:.2rem;padding:.1rem}.md-footer__direction{font-size:.64rem;left:0;margin-top:-1rem;opacity:.7;padding:0 1rem;position:absolute;right:0}
+.md-footer-meta{background-color:var(--md-footer-bg-color--dark)}.md-footer-meta__inner{display:flex;flex-wrap:wrap;justify-content:space-between;padding:.2rem}html 
+.md-footer-meta.md-typeset a{color:var(--md-footer-fg-color--light)}html .md-footer-meta.md-typeset a:focus,html .md-footer-meta.md-typeset a:hover{color:var(--md-footer-fg-color)}
+.md-footer-copyright{color:var(--md-footer-fg-color--lighter);font-size:.4rem;margin:auto .6rem;padding:.4rem 0;width:100%}@media screen and (min-width:45em){.md-footer-copyright{width:auto}}
+.md-footer-copyright__highlight{color:var(--md-footer-fg-color--light)}.md-footer-social{margin:0 .4rem;padding:.2rem 0 .6rem}@media screen and (min-width:45em){.md-footer-social{padding:.2rem 0}}
+.md-footer-social__link{display:inline-block;height:0.3rem;text-align:center;width:1.6rem}
+.md-footer-social__link:before{line-height:1.9}
+.md-footer__inner{overflow:hidden;padding:0rem}
+*/ 
+.md-header{background-color:#000;}
+
+footer {display:none;}  /* juste cette foutue commande !! */
+
+.md-sidebar--secondary {
+    width: 0rem;
+}
+
+.md-grid{margin-left:auto;margin-right:auto;max-width:100vw;}
+
+.md-nav--primary a{
+    /*color : red;*/
+}

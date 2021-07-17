@@ -94,8 +94,20 @@ extra_javascript:
     - javascripts/interpreter.js       
 
 plugins:
-  - search
-  - macros
+    - search
+    - macros
+    - encryptcontent:
+        global_password: 'wwwd'
+        password_button: True
+        password_button_text: '<- '
+        remember_password: True
+        disable_cookie_protection: True   # <-- Really a bad idea
+        
+    #     title_prefix: '[LOCK]'
+    #     summary: 'another informational message to encrypted content'
+    #     placeholder: 'another password placeholder'
+    #     decryption_failure_message: 'another informational message when decryption fail'
+    #     encryption_info_message: 'another information message when you dont have acess !'
     
     
 extra:

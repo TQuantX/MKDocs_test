@@ -1,0 +1,1 @@
+benchmark = ['longueur_ajout([], [])==0', 'longueur_ajout([1,3,5,5],[])==4', "longueur_ajout([0]\*100, [1]\*20)==120"]

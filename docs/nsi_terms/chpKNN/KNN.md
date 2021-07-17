@@ -1,3 +1,6 @@
+title: "Hello"
+password: KNN
+
 # Algorithme des $k$ plus proches voisins
 
 ## Présentation

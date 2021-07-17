@@ -1,3 +1,7 @@
+title: 'faire des maths en lateX'
+password: maths
+
+
 # lateX 
 
 Soit $x\in\displaystyle\int_{u=1}^{y=2}dx(\frac{3}{2} x^2)$ tel que $ x^2 = 5$ et sans espace : $x^2=5$
