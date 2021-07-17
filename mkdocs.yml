@@ -1,0 +1,118 @@
+# pip install mkdocs 
+# pip install mkdocs-macros-plugin
+
+site_name: "NSI"
+#site_url: https://bouillotvincent.gitlab.io/pyodide-mkdocs
+#repo_url: https://gitlab.com/bouillotvincent/pyodide-mkdocs
+#edit_uri: tree/main/docs/
+site_description: Site Description 
+copyright: None for now on
+docs_dir: docs
+
+
+theme:
+    name: material
+    custom_dir: override/
+    font: false                     # RGPD ; pas de fonte Google
+    language: fr                    # français
+    palette:                        # Palettes de couleurs jour/nuit
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: blue
+        accent: blue
+        toggle:
+            icon: material/weather-night
+            name: Passer au mode jour
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: indigo
+        accent: indigo
+        toggle:
+            icon: material/weather-sunny
+            name: Passer au mode nuit
+    logo: images/logo.jpeg #kermit.png
+    favicon: images/favicon.ico #kermit.png
+    features:
+        - toc.integrate
+        - navigation.tracking
+        - header.autohide
+        - footer.autohide
+        #        - navigation.instant
+#        - navigation.tabs
+#        - navigation.tabs.sticky
+#        - navigation.sections
+#        - navigation.expand
+#        - navigation.top
+            
+extra:
+    generator: false
+    
+
+    
+markdown_extensions : 
+    - pymdownx.superfences
+    - pymdownx.details  #boîtes repliables
+    - pymdownx.tabbed #mettre des onglets
+    - attr_list  #pour modifier les images
+    - admonition #pour faire des boîtes d'avertissement
+    - pymdownx.arithmatex :  #pour latex
+        generic : true
+    - footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
+    - pymdownx.details              #   qui peuvent se plier/déplier.
+    - pymdownx.caret                # Passage ^^souligné^^ ou en ^exposant^.
+    - pymdownx.mark                 # Passage ==surligné==.
+    - pymdownx.tilde                # Passage ~~barré~~ ou en ~indice~.
+    - pymdownx.highlight            # Coloration syntaxique du code
+    - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
+    - pymdownx.snippets             # Inclusion de fichiers externe.
+    - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
+        custom_checkbox:    false   #   avec cases d'origine
+        clickable_checkbox: true    #   et cliquables.
+    - pymdownx.keys:                # Touches du clavier.  ++ctrl+d++
+        separator: "\uff0b"
+    - pymdownx.emoji:               # Émojis  :boom:
+        emoji_index:     !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - toc:
+        permalink: ⚓︎
+        toc_depth: 3
+    
+    
+extra_css:
+    - css/extra.css
+    - stylesheets/pyoditeur.css
+    - stylesheets/ajustements.css                      # ajustements
+    
+extra_javascript:
+    # MathJax
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    - javascripts/config.js
+    - javascripts/mathjax-config.js    
+    
+    #pyodide 
+    - https://polyfill.io/v3/polyfill.min.js?features=es6          
+    - javascripts/interpreter.js       
+
+plugins:
+  - search
+  - macros
+    
+    
+extra:
+    social:
+        - icon: fontawesome/brands/linux
+          link: https://linuxfr.org/
+          name: Promouvoir les Logiciels libres
+
+        - icon: fontawesome/brands/wikipedia-w
+          link: https://fr.wikipedia.org
+          name: L'encyclopédie libre que chacun peut améliorer
+
+nav: 
+    - 'Acceuil' : 'index.md'
+    - Terms : 
+        - 'KNN' : 'nsi_terms/chpKNN/KNN.md'
+    - test_maths: 
+        - 'Maths' : 'maths.md'
+    - test_python: 
+        - 'python1' : 'python_test/python1.md'
